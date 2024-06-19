@@ -25,16 +25,6 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>FX Dashboard</title>
-    <script>
-      // Need this for aws amplify to not give error...idk
-      // https://github.com/aws-amplify/amplify-js/issues/7499#issuecomment-804386820
-      const isBrowser = () => typeof window !== 'undefined';
-      const isGlobal = () => typeof global !== 'undefined';
-      var exports = {};
-      if (!isGlobal() && isBrowser()) {
-        var global = window;
-      }
-    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
