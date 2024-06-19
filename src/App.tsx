@@ -6,19 +6,22 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
           This is the test website for FX Web
         </p>
-        <a
+
+      </header>
+      <body className="App-body">
+      <img src={logo} className="App-logo" alt="logo" />
+      <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://github.com/ehmkeoct/fxweb"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Project GitHub
         </a>
-      </header>
+      </body>
     </div>
   );
 }
