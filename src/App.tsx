@@ -7,6 +7,10 @@ import Stack from '@mui/material/Stack';
 import TopBar from './components/TopBar/TopBar'
 import Login from './components/Login/Login'
 import Dashboard from './components/Dashboard/Dashboard'
+import ErrorPage from "./error-page";
+import { Code, Launch, ChatBubbleOutline } from "@mui/icons-material";
+
+
 
 function App() {
 
@@ -24,20 +28,23 @@ function App() {
       <Button
         variant="contained"
         target="_blank"
-        href="https://us-east-2.console.aws.amazon.com/amplify/apps/dydv7y5329qud/overview">
-        Ampllify
+        href="https://us-east-2.console.aws.amazon.com/amplify/apps/dydv7y5329qud/overview"
+        endIcon={<Launch />}>
+        Amplify
       </Button>
       <Button
         variant="contained"
         target="_blank"
-        href="https://github.com/ehmkeoct/fxweb">
+        href="https://github.com/ehmkeoct/fxweb"
+        endIcon={<Code />}>
         Project GitHub
       </Button>
       <Button
         variant="contained"
         target="_blank"
         href="https://docs.google.com/document/d/1vz_G-1d9GsbOT2399IGgQ0AQPzIruA4rvICJb8uFDPg/edit?usp=sharing
-">
+"
+        endIcon={<ChatBubbleOutline />}>
         Document
       </Button>
     </Stack>
