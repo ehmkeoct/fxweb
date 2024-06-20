@@ -2,7 +2,9 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter, Route } from 'react-router-dom';
-
+import Button from "@mui/material/Button"
+import Stack from '@mui/material/Stack';
+import TopBar from './components/TopBar/TopBar'
 import Login from './components/Login/Login'
 import Dashboard from './components/Dashboard/Dashboard'
 
@@ -11,36 +13,35 @@ function App() {
   return (
     <div className="App">
       
-      <header className="App-header">
-        <div className ="header-content">
-          <p>
-            This is the skellington website for FX Web
-          </p>
-        </div>
-      </header>
-      <Login />
-      <Dashboard/>
-      <body className="App-body">
-        <img src={logo} className="App-logo" alt="logo" />
-        <a
-          className="App-link"
-          href="https://github.com/ehmkeoct/fxweb"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Project GitHub
-        </a>
-        <a
-          className="App-link"
-          href="https://us-east-2.console.aws.amazon.com/amplify/apps/dydv7y5329qud/overview"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Ampllify
-        </a>
-      </body>
-    </div>
-  );
-}
+      <TopBar />
 
+
+      <body className="App-body" >
+        <img src={logo} className="App-logo" alt="logo" />
+        <br />
+<br />
+        <Stack spacing={2} direction="row" marginLeft="10px">
+      <Button
+        variant="contained"
+        target="_blank"
+        href="https://us-east-2.console.aws.amazon.com/amplify/apps/dydv7y5329qud/overview">
+        Ampllify
+      </Button>
+      <Button
+        variant="contained"
+        target="_blank"
+        href="https://github.com/ehmkeoct/fxweb">
+        Project GitHub
+      </Button>
+      <Button
+        variant="contained"
+        target="_blank"
+        href="https://docs.google.com/document/d/1vz_G-1d9GsbOT2399IGgQ0AQPzIruA4rvICJb8uFDPg/edit?usp=sharing
+">
+        Document
+      </Button>
+    </Stack>
+      </body>
+    </div> );
+}
 export default App;

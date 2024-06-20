@@ -1,10 +1,9 @@
 import React from 'react';
 import Button from "@mui/material/Button"
-import TopBar from '../../components/TopBar/TopBar'
+import TopBar from '../components/TopBar/TopBar'
 
 export default function Dashboard() {
   return(
-    
     <body className="App-body" >
       <TopBar/>
       <Dashboard/>

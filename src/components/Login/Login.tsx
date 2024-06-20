@@ -1,7 +1,10 @@
-import React from 'react';
+import Button from "@mui/material/Button"
+import Dashboard from '../../components/Dashboard/Dashboard'
 
 export default function Login() {
   return(
-    <h2>Log in here</h2>
+    <Button
+    variant="outlined"
+      onClick={() => Dashboard()}>Log in</Button>
   );
 }
