@@ -7,7 +7,7 @@ import Button from "@mui/material/Button"
 import Stack from '@mui/material/Stack';
 import SendIcon from '@mui/icons-material/Send';
 import Dashboard from '../../components/Dashboard/Dashboard'
-import { Code, Launch, ChatBubbleOutline, GitHub } from "@mui/icons-material";
+import { Code, Launch, ChatBubbleOutline, GitHub, AddToPhotos } from "@mui/icons-material";
 export default function TopBar() {
   return(
     <div className="App-header">
@@ -40,6 +40,13 @@ export default function TopBar() {
         href="https://github.com/ehmkeoct/fxweb"
         endIcon={<GitHub />}>
         Project GitHub
+      </Button>
+      <Button
+        variant="text"
+        target="_blank"
+        href="https://mui.com/material-ui/material-icons/"
+        endIcon={<AddToPhotos />}>
+        Icons
       </Button>
       <Button
         variant="text">
