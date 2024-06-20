@@ -9,14 +9,14 @@ import Login from './components/Login/Login'
 import Dashboard from './components/Dashboard/Dashboard'
 import ErrorPage from "./error-page";
 import { Code, Launch, ChatBubbleOutline } from "@mui/icons-material";
-
+import ResponsiveAppBar from './components/AppBar/AppBar'
 
 
 function App() {
 
   return (
     <div className="App">
-      
+      <ResponsiveAppBar />
       <TopBar />
 
 
