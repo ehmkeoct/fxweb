@@ -1,29 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-
+import { BrowserRouter, Route } from 'react-router-dom';
+import Button from "@mui/material/Button"
+import Stack from '@mui/material/Stack';
+import TopBar from './components/TopBar/TopBar'
+import Login from './components/Login/Login'
+import ErrorPage from "./error-page";
+import ResponsiveAppBar from './components/Header/Header'
+import Dashboard from './Pages/Dashboard';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          This is the test website for FX Web
-        </p>
-
-      </header>
-      <body className="App-body">
-      <img src={logo} className="App-logo" alt="logo" />
-      <a
-          className="App-link"
-          href="https://github.com/ehmkeoct/fxweb"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Project GitHub
-        </a>
-      </body>
+      <ResponsiveAppBar />
+      <Dashboard/>
     </div>
-  );
+    );
 }
-
 export default App;
