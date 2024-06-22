@@ -1,5 +1,5 @@
 .App {
-
+  font: roboto;
 }
 
 .App-logo {
@@ -21,7 +21,7 @@
   align-items: left;
   justify-content: auto;
   font-size: calc(10px + 2vmin);
-  color: 282c34;
+  color: #282c34;
 }
 .header-content{
   margin-top: 17px;
@@ -29,7 +29,8 @@
 
 .App-body {
   background-color: #282c34;
-  height: 1200px
+  height: 1200px;
+  margin-top: 69px;
 }
 
 .App-link {
