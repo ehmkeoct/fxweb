@@ -3,6 +3,9 @@ import Button from "@mui/material/Button"
 import TopBar from '../components/TopBar/TopBar'
 import Stack from '@mui/material/Stack';
 import { Launch, ChatBubbleOutline, GitHub, AddToPhotos } from "@mui/icons-material";
+import AddPhotoAlternateOutlinedIcon from '@mui/icons-material/AddPhotoAlternateOutlined';
+import FormatColorFillIcon from '@mui/icons-material/FormatColorFill';
+import AccountTreeOutlinedIcon from '@mui/icons-material/AccountTreeOutlined';
 
 export default function Dashboard() {
   return(
@@ -35,14 +38,16 @@ export default function Dashboard() {
         target="_blank"
         sx={{ color: '#61dafb'}}
         href="https://mui.com/material-ui/material-icons/"
-        endIcon={<AddToPhotos />}>
+        endIcon={<AddPhotoAlternateOutlinedIcon />}>
         MUI Icons
       </Button>
       <Button
         variant="outlined"
         target="_blank"
         sx={{ color: '#61dafb'}}
-        href="https://mui.com/material-ui/all-components/">
+        href="https://mui.com/material-ui/all-components/"
+        endIcon={<AddToPhotos />}>
+        
         MUI Components
       </Button>
       <Button
@@ -53,18 +58,21 @@ export default function Dashboard() {
         endIcon={<ChatBubbleOutline />}>
         Document
       </Button>
-      </Stack>
-      <br/>
-      <Stack spacing={2}
-        direction="row"
-        marginLeft="25px"
-        sx={{ color: '#61dafb', display: 'block' }}>
       <Button
         sx={{ color: '#61dafb'}}
         variant="outlined"
         target="_blank"
-        href="https://monorepo.tools/">
+        href="https://monorepo.tools/"
+        endIcon={<AccountTreeOutlinedIcon/>}>
         Monorepo
+      </Button>
+      <Button
+        sx={{ color: '#61dafb'}}
+        variant="outlined"
+        target="_blank"
+        href="https://colorable.jxnblk.com/"
+        endIcon={<FormatColorFillIcon/>}>
+        Colorable
       </Button>
       </Stack>
       <Stack spacing={2}
